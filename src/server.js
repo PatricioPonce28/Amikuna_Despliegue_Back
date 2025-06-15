@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 })
 
 // Rutas para admin
-app.use('/api', router)
+app.use('/', router)
 
 // Rutas que no existen 
 app.use((req, res)=>{res.status(404).send("Endpoint no encontrado")})
